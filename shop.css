@@ -21,7 +21,7 @@ html {
 body {
     margin: 0;
     background-image: url("pic/bkgnd.png");
-    background-size: 10%;
+    background-size: 140px;
     background-blend-mode: lighten;
     background-color: rgb(78, 78, 78);
 }
@@ -279,7 +279,7 @@ h6 {
 
 .wynlogofont {
     color: rgb(0, 68, 128);
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     font-size: 60px;
     font-weight: 800;
     line-height: 45px;
