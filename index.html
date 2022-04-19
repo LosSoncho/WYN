@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@200;300;400;500&family=Montserrat:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+
+
+<body>
+    <div class="navbar">
+        <h1 class="headline">
+            WYN<br> <span class="mobile">Mobile</span>
+        </h1>
+
+
+        <div>
+            <p>
+                <ol class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="AboutUs.html">Marken</a></li>
+                    <li><a href="projects.html">Produkte</a></li>
+                    <li><a href="#">Dienstleistungen</a></li>
+                </ol>
+            </p>
+        </div>
+
+
+
+    </div>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="pic/pic1.jpg" style="width:100%">
+            <div class="text">PCB Leiterplatienen</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="pic/pic2.jpg" style="width:100%">
+            <div class="text">Smart Elektrionik</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="pic/Final-D8000Pro-Kopfhoerer1.jpg" style="width:100%">
+            <div class="text">Multimedia Geräte</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">
+            <</a>
+                <a class="next" onclick="plusSlides(1)">></a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+
+    <div class="text-mitte">
+
+        <h1>Professionelle hilfe immer und überall!</h1>
+
+        <h2>Reparatur & Handel von Smartphone & anderen Elektrogeräten <br>bei uns können Sie auf bestes Kundenservice zählen.</h2>
+
+        <p>Wir beliefern Händler, in ganz Österreich und Deutschland <br>mit der besten Ware, dem aktuellsten Trend, <br> und den coolsten IT-Gadgets die akutell, <br> am Mark verfügbar sind!
+            </b>
+            </a>
+        </p>
+
+
+    </div>
+
+    <h1>Wir bieten ersatzteile für alle führenden Smartphone Marken!</h1>
+
+    <div class="logo">
+        <img id="1" src="pic/apple.png" alt="">
+        <img id="1" src="pic/huawei.png" alt="">
+        <img id="1" src="pic/samsung.png" alt="">
+        <img id="1" src="pic/xiaomi.png" alt="">
+    </div>
+
+
+    <div class="leiste-unten">
+        -
+        <a href="#">Impressum</a> -
+        <a href="#">Kontakt aufnehmen</a> -
+        <a href="#">Standort</a> -
+        <a href="#">Über uns</a> -
+
+    </div>
+
+
+
+
+</body>
+
+</html>
