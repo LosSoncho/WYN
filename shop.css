@@ -21,7 +21,6 @@ html {
 body {
     margin: 0;
     background-image: url("pic/bkgnd.png");
-    background-repeat: ;
     background-size: 10%;
     background-blend-mode: lighten;
     background-color: rgb(78, 78, 78);
@@ -276,6 +275,23 @@ h6 {
 
 .w3-monospace {
     font-family: monospace
+}
+
+.wynlogofont {
+    color: rgb(0, 68, 128);
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 45px;
+    text-align: center;
+}
+
+.backgnd {
+    background-color: #a9a9a994;
+}
+
+.backgnd2 {
+    background-color: #ffffff8c;
 }
 
 h1,
@@ -1615,13 +1631,13 @@ a {
 .w3-white,
 .w3-hover-white:hover {
     color: #000!important;
-    background-color: #d1d1d1d7!important
+    background-color: #ffffff8c!important
 }
 
 .w3-black,
 .w3-hover-black:hover {
     color: #fff!important;
-    background-color: #2c2c2c!important
+    background-color: #2c2c2ccb!important
 }
 
 .w3-grey,
@@ -1761,7 +1777,7 @@ a {
 
 .w3-text-red,
 .w3-hover-text-red:hover {
-    color: #f44336!important
+    color: #901810!important
 }
 
 .w3-text-sand,
